@@ -1,23 +1,109 @@
-* {
+/* Reset some default styles for better consistency */
+body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
+}
+
+/* Apply a box-sizing border-box model to all elements */
+* {
     box-sizing: border-box;
 }
 
+/* Set up basic styling for the body */
 body {
-    background-color: #f5f5f5;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
 }
 
-.text {
-    color: #a80101;
-    font-size: 1.5rem;
-    font-weight: 600;
+/* Style the header section */
+.section-basicInfo {
+    background-color: #3498db;
+    color: #fff;
+    padding: 40px 0;
     text-align: center;
 }
 
-iframe {
-    width: 100vw;
-    height: 100vh;
-    border: none;
+.name {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.email {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+/* Style the description section */
+.section-description {
+    padding: 40px 0;
+}
+
+.title.about-me {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.paragraph_1, .paragraph_2, .paragraph_3 {
+    margin-top: 10px;
+}
+
+/* Style the education section */
+.section-education {
+    background-color: #ecf0f1;
+    padding: 40px 0;
+}
+
+.education_list {
+    list-style: none;
+}
+
+.education_item_title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.education_item_subtitle, .education_item_date {
+    margin-top: 5px;
+}
+
+/* Style the projects section */
+.section-projects {
+    padding: 40px 0;
+}
+
+.projects_list {
+    list-style: none;
+}
+
+.projects_item_title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.projects_item_subtitle, .projects_item_date {
+    margin-top: 5px;
+}
+
+/* Style the container */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
 }
